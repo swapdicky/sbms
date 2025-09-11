@@ -1,0 +1,17 @@
+{#
+  Custom template for People listing page (Page display)
+  會顯示相片、名字、職銜
+  可用變數：fields.<machine_name>.content
+  請根據你實際的欄位名稱修改 field_photo / field_job_title
+#}
+
+<article class="person-card">
+  <a href="{{ fields.title.content|striptags }}">
+    <div class="person-thumb">
+      {{ fields.field_photo is defined ? fields.field_photo.content : '' }}
+    </div>
+    <h3 class="person-name">{{ fields.title.content }}12</h3>
+  </a>
+
+  123
+</article>

@@ -1,0 +1,24 @@
+{# themes/custom/swap/templates/page.html.twig #}
+<!DOCTYPE html>
+<html>
+<head>
+  <head-placeholder token="{{ placeholder_token }}">
+  <title>{{ head_title|safe_join(' | ') }}</title>
+  <css-placeholder token="{{ placeholder_token }}">
+  <js-placeholder token="{{ placeholder_token }}">
+</head>
+<body class="{{ body_classes }}">
+  {% include "@swap/partials/header.html.twig" %}
+
+  <main role="main">
+    {{ page.content }}
+  </main>
+
+  <footer class="site-footer">
+    {{ page.footer }}
+    123
+  </footer>
+
+  <js-bottom-placeholder token="{{ placeholder_token }}">
+</body>
+</html>

@@ -1,0 +1,13 @@
+{# 自訂 Header（可自由改 HTML） #}
+<header class="site-header">
+  <div class="container header-inner">
+    {# 方式 A：用 Twig Tweak 的 Branding Block（含 logo + site name） #}
+    {{ drupal_block('system_branding_block') }}
+
+    <nav class="primary-nav">
+      {# 方式 A：Twig Tweak 直接輸出 main menu #}
+      {{ drupal_menu('main') }}
+      {# 方式 B（不用 Twig Tweak）：在「結構→版面配置」把 Main navigation block 放到 'primary_menu' region，然後在 page.html.twig 用 {{ page.primary_menu }} #}
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,13 @@
+name: Swap
+type: theme
+description: 'Custom frontend theme'
+core_version_requirement: ^11
+base theme: olivero
+libraries:
+  - swap/global
+
+regions:
+  header: Header
+  primary_menu: Primary menu
+  content: Content
+  footer: Footer
